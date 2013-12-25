@@ -68,6 +68,15 @@ DEFAULT_TEMPLATE = """
     <link rel="stylesheet" type="text/css"
      href="%(dotdot)s%(STATIC_PATH)sabe.css" />
     <link rel="shortcut icon" href="%(dotdot)s%(STATIC_PATH)sfavicon.ico" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-36765833-3', 'catchain.info');
+      ga('send', 'pageview');
+    </script>
 </head>
 <body>
     <nav>
@@ -84,15 +93,6 @@ DEFAULT_TEMPLATE = """
             <a href="http://catchain.info/address/9XZeUtaaQNyUmHQGF7xBm8n3o553kunJYb">Donate</a>
         </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-36765833-3', 'catchain.info');
-      ga('send', 'pageview');
-    </script>
 </body>
 </html>
 """

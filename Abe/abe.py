@@ -90,6 +90,7 @@ DEFAULT_TEMPLATE = """
             <a href="http://catchain.info/q">API</a>
             <a href="http://www.reddit.com/r/catcoins" target="_blank">Reddit</a>
             <a href="http://catcoins.biz" target="_blank">Catcoins.biz</a>
+            <a href="http://catcoins.biz/address" target="_blank">Paper wallets</a>
             <a href="http://catchain.info/address/9XZeUtaaQNyUmHQGF7xBm8n3o553kunJYb">Donate</a>
         </div>
     </div>

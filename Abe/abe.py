@@ -89,7 +89,7 @@ DEFAULT_TEMPLATE = """
         <div class="footer">
             <a href="http://catchain.info/q">API</a>
             <a href="http://www.reddit.com/r/catcoins" target="_blank">Reddit</a>
-            <a href="http://catcoins.org" target="_blank">Catcoins.org</a>
+            <a href="http://catcoins.biz" target="_blank">Catcoins.biz</a>
             <a href="http://catchain.info/address/9XZeUtaaQNyUmHQGF7xBm8n3o553kunJYb">Donate</a>
         </div>
     </div>

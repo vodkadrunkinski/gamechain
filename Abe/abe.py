@@ -81,7 +81,7 @@ DEFAULT_TEMPLATE = """
     <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="http://catcoins.biz">
-                <img src="images/catcoin-glyph-aaaaaa.png" alt="" height="35">
+                <img src="%(dotdot)s%(STATIC_PATH)scatcoin-glyph-aaaaaa.png" alt="" height="35">
                 Catcoin
             </a>
             <ul class="nav navbar-nav navbar-right">

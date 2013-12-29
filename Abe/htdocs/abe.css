@@ -1,10 +1,28 @@
 body {
   background: #f0f9fc;
   font-size: 15px;
-  padding: 10px 20px 20px;
+  padding: 60px 20px 20px;
 }
 
-body > nav {
+.navbar-fixed-top {
+  position: absolute;
+}
+
+.navbar-brand > img {
+  margin: -18px 5px -15px 0px;
+}
+
+nav a i {
+  margin-right: 7px;
+}
+
+a, .btn {
+  transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+body > .header {
   padding-bottom: 18px;
   text-align: center;
 }
@@ -84,6 +102,10 @@ p.shortlink > a {
 .footer > a {
   display: inline-block;
   margin: 0px 15px;
+}
+
+.footer > a > i {
+  margin-right: 9px;
 }
 
 .information {

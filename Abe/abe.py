@@ -63,10 +63,9 @@ DEFAULT_TEMPLATE = """
 <head>
     <title>%(title)s</title>
     <meta name="description" content="Catcoin Block Explorer: view detailed information on all Catcoin transactions and blocks.">
-    <link rel="stylesheet" type="text/css"
-     href="%(dotdot)s%(STATIC_PATH)sbootstrap.css" />
-    <link rel="stylesheet" type="text/css"
-     href="%(dotdot)s%(STATIC_PATH)sabe.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="%(dotdot)s%(STATIC_PATH)sabe.css" />
     <link rel="shortcut icon" href="%(dotdot)s%(STATIC_PATH)sfavicon.ico" />
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -79,19 +78,31 @@ DEFAULT_TEMPLATE = """
     </script>
 </head>
 <body>
-    <nav>
-        <a href="%(dotdot)s%(HOMEPAGE)s"><img src="%(dotdot)s%(STATIC_PATH)scatchain-xmas.png" alt="" width="220"></a>
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="http://catcoins.biz">
+                <img src="images/catcoin-glyph-aaaaaa.png" alt="" height="35">
+                Catcoin
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://catcoins.biz"><i class="fa fa-info-circle"></i>Catcoins.biz</a></li>
+                <li class="active"><a href="http://catchain.info"><i class="fa fa-chain"></i>Blockchain</a></li>
+                <li><a href="http://catcoins.biz/address" target="_blank"><i class="fa fa-qrcode"></i>Wallets</a></li>
+            </ul>
+        </div>
     </nav>
+    <div class="header">
+        <a href="%(dotdot)s%(HOMEPAGE)s"><img src="%(dotdot)s%(STATIC_PATH)scatchain-xmas.png" alt="" width="220"></a>
+    </div>
     <div class="content">
         <h1 class="pull-left">%(h1)s</h1>
         %(body)s
         <hr class="clear">
         <div class="footer">
-            <a href="http://catchain.info/q">API</a>
-            <a href="http://www.reddit.com/r/catcoins" target="_blank">Reddit</a>
-            <a href="http://catcoins.biz" target="_blank">Catcoins.biz</a>
-            <a href="http://catcoins.biz/address" target="_blank">Paper wallets</a>
-            <a href="http://catchain.info/address/9XZeUtaaQNyUmHQGF7xBm8n3o553kunJYb">Donate</a>
+            <a href="http://catcoins.biz"><i class="fa fa-info-circle"></i>Catcoins.biz</a>
+            <a href="http://catcoins.biz/address" target="_blank"><i class="fa fa-qrcode"></i>Wallets</a>
+            <a href="http://catchain.info/q"><i class="fa fa-code"></i>API</a>
+            <a href="http://catchain.info/address/9XZeUtaaQNyUmHQGF7xBm8n3o553kunJYb"><i class="fa fa-heart"></i>Donate</a>
         </div>
     </div>
 </body>

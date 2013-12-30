@@ -1190,7 +1190,11 @@ class Abe:
             ' public key hash, or chain name:</p>\n'
             '<form class="form-inline" action="', page['dotdot'], 'search">\n'
             '<div class="input-group"><input class="form-control" name="q" size="64" value="', escape(q), '" />'
+<<<<<<< HEAD
             '<span class="input-group-btn"><button class="btn btn-default btn-group" type="submit">Search</button></span></div></form></div>\n']
+=======
+            '<span class="input-group-btn"><button class="btn btn-info" type="submit">Search</button></span></div></form></div>\n']
+>>>>>>> upstream/master
 
     def handle_search(abe, page):
         page['title'] = 'Search - Catchain'
@@ -1909,7 +1913,9 @@ class Abe:
         """returns an address's firstbits."""
 
         if not abe.store.use_firstbits:
-            raise PageNotFound()
+            ##raise PageNotFound()
+            ##status = '404 Not Found'
+            return 'Sorry, /q/fb is still being implemented.'
 
         addr = wsgiref.util.shift_path_info(page['env'])
         if addr is None:
@@ -1940,7 +1946,9 @@ class Abe:
         """returns the full address having the given firstbits."""
 
         if not abe.store.use_firstbits:
-            raise PageNotFound()
+            ##raise PageNotFound()
+            ##status = '404 Not Found'
+            return 'Sorry, /q/addr is still being implemented.'
 
         fb = wsgiref.util.shift_path_info(page['env'])
         if fb is None:

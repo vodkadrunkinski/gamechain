@@ -1940,7 +1940,9 @@ class Abe:
         """returns the full address having the given firstbits."""
 
         if not abe.store.use_firstbits:
-            raise PageNotFound()
+            ##raise PageNotFound()
+            ##status = '404 Not Found'
+            return 'Sorry, addr is still being implemented.'
 
         fb = wsgiref.util.shift_path_info(page['env'])
         if fb is None:

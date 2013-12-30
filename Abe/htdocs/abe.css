@@ -166,7 +166,8 @@ p.shortlink > a {
 
 .search .input-group {
   margin: 0px auto;
-  min-width: 700px;
+  min-width: 600px;
+  max-width: 100%;
   width: 60%;
 }
 

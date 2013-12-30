@@ -1189,8 +1189,8 @@ class Abe:
             '<div class="search"><p>Search by address, block number or hash, transaction or'
             ' public key hash, or chain name:</p>\n'
             '<form class="form-inline" action="', page['dotdot'], 'search">\n'
-            '<div class="form-group"><div class="input-group"><input class="form-control" name="q" size="64" value="', escape(q), '" /></div>'
-            '<button class="btn btn-info" type="submit">Search</button></div></form></div>\n']
+            '<div class="input-group"><input class="form-control" name="q" size="64" value="', escape(q), '" />'
+            '<span class="input-group-btn"><button class="btn btn-info" type="submit">Search</button></span></div></form></div>\n']
 
     def handle_search(abe, page):
         page['title'] = 'Search - Catchain'

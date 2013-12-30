@@ -172,6 +172,17 @@ p.shortlink > a {
   font-weight: 300;
 }
 
+.form-control {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+button[type="submit"] {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-left: -1px;
+}
+
 @media (min-width: 768px) {
   .dl-horizontal dt {
     font-weight: 500;

@@ -164,6 +164,12 @@ p.shortlink > a {
   font-weight: 300;
 }
 
+.search .input-group {
+  margin: 0px auto;
+  min-width: 700px;
+  width: 60%;
+}
+
 .pagination {
   margin-bottom: 0px;
 }

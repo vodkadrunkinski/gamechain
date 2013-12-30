@@ -12,7 +12,11 @@ body {
   margin: -18px 5px -15px 0px;
 }
 
-nav a i {
+.nav a {
+  font-size: 14px;
+}
+
+.nav a i {
   margin-right: 7px;
 }
 

@@ -179,7 +179,7 @@ p.shortlink > a {
 
 button[type="submit"] {
   border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   margin-left: -1px;
 }
 
